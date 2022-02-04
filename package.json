@@ -1,25 +1,26 @@
 {
-  "name": "zalgo-js",
+  "name": "@ryanforever/zalgo",
   "version": "1.0.0",
-  "description": "Utility functions for unleashing Zalgo into strings.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "description": "convert text to zalgo text",
+  "main": "index.js",
+  "dependencies": {
+    "seedrandom": "^2.4.3"
+  },
+  "devDependencies": {},
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build",
-    "test": "jest"
+    "test": "node zalgo-text.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/casieber/zalgo-js.git"
+    "url": "git+https://github.com/ryanfarber/zalgo.git"
   },
-  "author": "Colby Sieber <sieber.colby@gmail.com>",
-  "license": "MIT",
+  "keywords": [
+    "zalgo"
+  ],
+  "author": "ryan forever",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/casieber/zalgo-js/issues"
+    "url": "https://github.com/ryanfarber/zalgo/issues"
   },
-  "homepage": "https://github.com/casieber/zalgo-js#readme",
-  "dependencies": {
-    "seedrandom": "^2.4.3"
-  }
+  "homepage": "https://github.com/ryanfarber/zalgo#readme"
 }

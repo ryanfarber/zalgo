@@ -2,15 +2,8 @@
 
 let zalgoText = require("./og/dist/index.js").default
 
-
-
-
-
-
-
-
-
 function Zalgo(config = {}) {
+	let debug = config.debug
 
 	// CREATE //
 	this.create = function(string, customConfig = {}) {
@@ -30,18 +23,13 @@ function Zalgo(config = {}) {
 		}
 
 		if (!config.up && !config.middle && !config.down) {
-			// config.up = true
-			// config.down = true
-			// config.middle = true
 			options.directions = undefined
 		}
-		console.log(options)
-	
-
-
 		let output = zalgoText(string, options)
-
-		console.log(output)
+		if (debug) {
+			console.log(options)
+			console.log(output)
+		}
 		return output
 	}
 
@@ -55,13 +43,4 @@ function Zalgo(config = {}) {
 }
 
 
-let zalgo = new Zalgo({
-	up: true,
-	down: true,
-	middle: false,
-	intensity: .5
-})
-
-
-
-zalgo("hello world" )
+module.exports = Zalgo
