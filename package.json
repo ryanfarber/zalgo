@@ -19,23 +19,6 @@
     "url": "https://github.com/casieber/zalgo-js/issues"
   },
   "homepage": "https://github.com/casieber/zalgo-js#readme",
-  "devDependencies": {
-    "@types/jest": "^22.2.2",
-    "@types/seedrandom": "^2.4.27",
-    "jest": "^22.4.3",
-    "ts-jest": "^22.4.2",
-    "typescript": "^2.8.1"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "/test/.*",
-    "moduleFileExtensions": [
-      "ts",
-      "js"
-    ]
-  },
   "dependencies": {
     "seedrandom": "^2.4.3"
   }
