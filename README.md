@@ -1,6 +1,6 @@
 # zalgo
 
-fork of [zalgo-js](https://github.com/casieber/zalgo-js)
+Fork of [zalgo-js](https://github.com/casieber/zalgo-js). A simplified implementation.
 
 
 ## usage
