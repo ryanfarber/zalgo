@@ -55,12 +55,13 @@ function Zalgo(config = {}) {
 }
 
 
-let zalgo = new Zalgo()
-
-
-
-zalgo("sdfs", {
-	// up: true,
-	// down: true,
-	// middle: true
+let zalgo = new Zalgo({
+	up: true,
+	down: true,
+	middle: false,
+	intensity: .5
 })
+
+
+
+zalgo("hello world" )
